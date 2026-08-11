@@ -12,7 +12,7 @@ using namespace std;
 
        void database()
        {
-         int no;
+         int no,Count;
            cout<<"Which Data do you want to retrieve about the student: "<<endl;
            cout<<"Enter \n 1. For Complete Data about the student \n 2. For Name of the student \n 3. For Roll NO of the student \n 4. For Age of the student \n 5.For Phone No of the Student \n 6. For Gender of the student"<<endl;
            cin>>no;
@@ -57,9 +57,46 @@ using namespace std;
     
      
     int main()
-    {
-         int a,b,c;
-         
+    {    
+       int n,i;
+          cout<<"Enter the Total No of Students: "<<endl;
+          cin>>n;
+            Student_Data Data[n];
+       int phone_no,age,roll,clas;
+       string name;
+       char gender;
+    cin.ignore();
+       for(i=0;i<n;i++)
+       {
+            cout<<"For the Student with Serial No. "<<i+1<<endl;
+
+               cout<<"Enter The Namen :"<<endl;
+               getline(cin,name);
+               cout<<"Enter The Roll :"<<endl;
+               cin>>roll; 
+               cout<<"Enter The Class :"<<endl;
+               cin>>clas;
+               cout<<"Enter The Gender :"<<endl;
+               cin>>gender;
+               cout<<"Enter The Phone No :"<<endl;
+               cin>>phone_no; 
+               cout<<"Enter The Age :"<<endl;
+               cin>>age;
+                 cin.ignore(); 
+
+                    Data[i].name=name;
+                    Data[i].Roll_no=roll;
+                    Data[i].Class=clas;
+                    Data[i].Gender=gender;
+                    Data[i].Phone_no=phone_no;
+                    Data[i].Age=age;
+       }
+
+
+
+
+
+
 
 
 
