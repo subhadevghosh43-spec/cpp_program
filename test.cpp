@@ -112,7 +112,7 @@ using namespace std;
                 cout<<"Enter 1 to continue or enter any other no to exit "<<endl;
                 cin>>A;
 
-              } while(A == 1);
+              } while(A=1);
       return 0;
 
     }
